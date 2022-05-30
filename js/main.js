@@ -8,8 +8,10 @@ in the gift form.
 function logURL(){
     var giftAmount       = document.querySelector('input[name=giftAmount]:checked').value;
     var giftFrequency    = document.querySelector('input[name=giftFrequency]:checked').value;
-    var otherGiftAmount  = document.getElementById('otherGiftAmount').value;
+    var otherGiftAmount  = document.getElementById('enterGiftAmount').value;
     var siteURL          = window.location.href;
+
+    console.log(otherGiftAmount)
 
     //Removes #main if user uses skip to main content link
     siteURL              = siteURL.replace('#main','')
@@ -45,5 +47,5 @@ button is selected for gift amount.
 document.getElementById("giftAmount").onclick = function() {clearOtherGift()};
 
 function clearOtherGift() {
-    document.getElementById('otherGiftAmount').value='';
+    document.getElementById('enterGiftAmount').value='';
 }
