@@ -34,3 +34,16 @@ function logURL(){
     form doesn't have to process */
     event.preventDefault();
 }
+
+/*==========================================
+
+Clears the "Enter Gift Amount Field" if a radio
+button is selected for gift amount.
+
+==========================================*/
+
+document.getElementById("giftAmount").onclick = function() {clearOtherGift()};
+
+function clearOtherGift() {
+    document.getElementById('otherGiftAmount').value='';
+}
