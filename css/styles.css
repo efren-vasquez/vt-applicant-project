@@ -82,6 +82,11 @@ input#enter-gift {
     font-weight: 600;
 }
 
+.btn-primary:hover{
+    background-color: var(--vt-blue);
+    border: var(--vt-blue);
+}
+
 .btn-primary:not(:disabled):not(.disabled).active {
     background-color: var(--vt-hokieStone);
     border-color: transparent;
