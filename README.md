@@ -14,6 +14,9 @@ The requirements:
 - must display how a URL would change as options change via developer console, see "?option1=value&option2=value" or the like in console
 - all code must be human readable, not minified
 
+## View Page
+You can view this page [here](https://efren-vasquez.github.io/vt-applicant-project/)
+
 ## Functionality 
 User can select to donate a given amount ($25, $50, and $100) or they can also enter their own amount. If the user enters an amount but then decides they want to use a predetermined amount, the money amount they entered will be deleted
 
