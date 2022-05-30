@@ -27,7 +27,63 @@
 	</head>
 
 	<body>
-		
+		<main class="container mt-4 px-4" id="main">
+			<a class="skip-to-content-link" href="#main">
+				Skip to content
+			</a>
+
+			<h1 class="mb-4">Your gift makes the difference.</h1>
+			<form class="row donation-modal m-0 p-0 align-items-end" id="donationForm">
+				<fieldset class="col-md-3 p-0 pr-md-3 mb-4 mb-md-0" id="giftAmount">
+					<legend class="d-block mb-3">Select a gift amount:</legend>
+					<div class="row m-0 p-0" data-toggle="buttons">
+						<label class="btn btn-primary form-check-label col-4 active" for="twenty-five-dollar-donation">
+							<input class="form-check-input" type="radio" name="giftAmount" id="twenty-five-dollar-donation" value="25" checked>
+							$25
+						</label>
+						
+						<label class="btn btn-primary form-check-label col-4" for="fifty-dollar-donation">
+							<input class="form-check-input" type="radio" name="giftAmount" id="fifty-dollar-donation" value="50" > 
+							$50
+						</label>
+
+						<label class="btn btn-primary form-check-label col-4" for="one-hundred-dollar-donation">
+							<input class="form-check-input" type="radio" name="giftAmount" id="one-hundred-dollar-donation" value="100"> 
+							$100
+						</label>
+
+	
+				</fieldset>
+
+				<div class="col-md-3 p-0 pr-md-3 mb-4 mb-md-0" role="group" aria-labelledby="otherGiftAmount">
+					<label id="otherGiftAmount" for="otherGiftAmount" class="d-block mb-3">Or enter a gift amount</label>
+					<div class="input-group">
+						<div class="input-group-prepend" aria-hidden="true">
+							<span class="input-group-text px-2 py-0 rounded-0">$</span>
+						</div>
+						<input id="enterGiftAmount" name="otherGiftAmount" type="number" class="form-control rounded-0"  placeholder="25.00" max="10000" aria-label="Enter Amount (to the nearest dollar)">
+
+					</div>
+				</div>
+
+				<fieldset class="col-md-3 p-0 pr-md-3 mb-5 mb-md-0" role="group" aria-labelledby="giftFrequency">
+					<legend class="d-block mb-3" id="giftFrequency">Gift Frequency</legend>
+					<div class="row m-0 p-0" data-toggle="buttons">
+						<label class="btn btn-primary form-check-label col-6 active" for="one-time-donation">
+							<input class="form-check-input" type="radio" name="giftFrequency" id="one-time-donation" checked value="oneTime">
+							One-time
+						</label>
+						
+						<label class="btn btn-primary form-check-label col-6" for="monthly-donation">
+							<input class="form-check-input" type="radio" name="giftFrequency" id="monthly-donation" value="monthly"> 
+							Monthly
+						</label>
+					</div>
+				</fieldset>
+
+				<input type="submit" class="col-md-3 btn-submit p-3 p-md-1 border-0" value="Give one-time"  onclick="logURL()">
+			</form>
+		</main>
 
 		<!-- Custom JavaScript -->
 		<script src="js/main.js"></script>
